@@ -23,7 +23,7 @@
     <br>
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white&style=flat"/>
     <img src="https://img.shields.io/badge/LLM-LLaMA--3-blueviolet"/>
     <img src="https://img.shields.io/badge/OpenRouter-API-green"/>
 </div>
