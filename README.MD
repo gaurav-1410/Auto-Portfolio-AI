@@ -30,18 +30,18 @@
 ---
 
 ## 🗂️ Table of Contents
-- [✨ Features](#features-)
-- [🛠️ Getting Started](#getting-started-)
-- [👨‍💻 Usage](#usage-)
-- [🧰 Tech Stack](#tech-stack-)
-- [🗺️ Roadmap](#roadmap-)
-- [🤝 Contributing](#contributing-)
-- [🏷️ License](#license-)
-- [🙏 Acknowledgements](#acknowledgements-)
+- [Features](#features-)
+- [Getting Started](#getting-started)
+- [Usage](#usage-)
+- [Tech Stack](#tech-stack-)
+- [Roadmap](#roadmap-)
+- [Contributing](#contributing-)
+- [License](#license-)
+- [Acknowledgements](#acknowledgements-)
 
 ---
 
-## ✨ Features
+## Features ✨
 
 - **PDF Resume Parsing:** Extract skills from uploaded resumes in PDF format.
 - **AI-Powered Job Matching:** Match user skills against job descriptions with LLaMA 3 via OpenRouter.
@@ -50,7 +50,7 @@
 - **Project Suggestions:** Receive project ideas to bridge your skill gaps.
 - **Smooth Multi-Step Forms** and session handling.
 
-## 🛠️ Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/gaurav-1410/Auto-Portfolio-AI.git
@@ -63,7 +63,7 @@ python app.py
 
 ---
 
-## 👨‍💻 Usage
+## Usage 👨‍💻
 
 1. **Upload your PDF resume.**
 2. **Paste the target job description.**
@@ -72,7 +72,7 @@ python app.py
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack 🧰
 
 - **Flask** - Web framework
 - **pdfplumber** - PDF parsing
@@ -82,7 +82,7 @@ python app.py
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap 🗺️
 
 - Add persistent user sessions
 - Expand project suggestion logic
@@ -91,20 +91,20 @@ python app.py
 
 ---
 
-## 🤝 Contributing
+## Contributing 🤝
 
 Contributions are welcome!  
 - Open an issue or submit a pull request for enhancements and bug fixes.
 
 ---
 
-## 🏷️ License
+## License 🏷️
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements 🙏
 
 - Thanks to LLaMA 3 and the OpenRouter ecosystem.
 
