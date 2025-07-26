@@ -135,9 +135,4 @@ def query_openrouter(prompt):
         return f"❌ Error {response.status_code}: {response.text}"
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-
-"""**E-commerce Analysis**: Use Streamlit to create a web-based dashboard to analyze sales 
-data from a fictional e-commerce company. Apply linear regression and 
-logistic regression to predict customer purchase behavior and recommend products. Use My SQL to store and query the data."""
+    app.run(host="0.0.0.0", debug=True)
