@@ -13,6 +13,9 @@
     <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI/blob/main/LICENSE">
         <img src="https://img.shields.io/github/license/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="License"/>
     </a>
+    <a href="https://hub.docker.com/r/gp1410/autoportfolio_ai">
+        <img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker&style=for-the-badge" alt="Docker"/>
+    </a>
 </div>
 
 <div align="center">
