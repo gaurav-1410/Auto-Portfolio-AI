@@ -31,7 +31,7 @@
 
 ## 🗂️ Table of Contents
 - [Features](#features-)
-- [Getting Started](#getting-started-)
+- [Tech Stack](#tech-stack-)
 - [Usage](#usage-)
 - [Tech Stack](#tech-stack-)
 - [Roadmap](#roadmap-)
