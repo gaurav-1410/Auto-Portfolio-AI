@@ -23,6 +23,7 @@
     <br>
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white&style=flat"/>
     <img src="https://img.shields.io/badge/LLM-LLaMA--3-blueviolet"/>
     <img src="https://img.shields.io/badge/OpenRouter-API-green"/>
 </div>
@@ -32,6 +33,7 @@
 ## 🗂️ Table of Contents
 - [Features](#features-)
 - [Getting Started](#getting-started)
+- [Docker](#docker)
 - [Usage](#usage-)
 - [Tech Stack](#tech-stack-)
 - [Roadmap](#roadmap-)
@@ -63,6 +65,32 @@ python app.py
 
 ---
 
+## Docker 
+
+You can also run AutoPortfolio-AI using Docker:
+
+### Pull from Docker Hub
+
+```bash
+docker pull gp1410/autoportfolio_ai
+```
+
+### Run the container
+
+```bash
+docker run -p 8888:5000 gp1410/autoportfolio_ai
+```
+Visit `http://localhost:8888` in your browser.
+
+### Or Build Locally
+
+```bash
+docker build -t autoportfolio_ai .
+docker run -p 8888:5000 autoportfolio_ai
+```
+
+View the image on [Docker Hub](https://hub.docker.com/r/gp1410/autoportfolio_ai).
+
 ## Usage 👨‍💻
 
 1. **Upload your PDF resume.**
@@ -79,6 +107,7 @@ python app.py
 - **LLaMA 3 via OpenRouter** - LLM-based intelligence
 - **Python-dotenv** - Configuration
 - **Requests, Werkzeug** - Utilities
+- **Docker** - Containerization
 
 ---
 
