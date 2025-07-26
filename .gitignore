@@ -1,2 +1,50 @@
-.venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environment
+.venv/
+.env/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python dotenv environment variables file
 .env
+
+# Flask instance folder if used
+instance/
+
+# Logs
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pip cache
+__pypackages__/
+
+# macOS files
+.DS_Store
+
+# Windows thumbnail cache files
+Thumbs.db
