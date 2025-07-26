@@ -31,7 +31,7 @@
 
 ## 🗂️ Table of Contents
 - [Features](#features-)
-- [Getting Started](#getting-started)
+- [Getting Started](#getting-started-🛠️)
 - [Usage](#usage-)
 - [Tech Stack](#tech-stack-)
 - [Roadmap](#roadmap-)
@@ -50,7 +50,7 @@
 - **Project Suggestions:** Receive project ideas to bridge your skill gaps.
 - **Smooth Multi-Step Forms** and session handling.
 
-## Getting Started
+## Getting Started 🛠️
 
 ```bash
 git clone https://github.com/gaurav-1410/Auto-Portfolio-AI.git
