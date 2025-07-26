@@ -65,7 +65,7 @@ python app.py
 
 ---
 
-## Docker 👨‍💻
+## Docker 
 
 You can also run AutoPortfolio-AI using Docker:
 
@@ -86,7 +86,7 @@ Visit `http://localhost:8888` in your browser.
 
 ```bash
 docker build -t autoportfolio_ai .
-docker run -d -p 5000:5000 autoportfolio_ai
+docker run -p 8888:5000 autoportfolio_ai
 ```
 
 View the image on [Docker Hub](https://hub.docker.com/r/gp1410/autoportfolio_ai).
