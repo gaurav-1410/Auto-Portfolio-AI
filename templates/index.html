@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Skill Analyzer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    :root {
+      --bg-color: #f2f4f7;
+      --text-color: #111827;
+      --container-bg: #ffffff;
+      --border-color: #e5e7eb;
+      --primary: #2563eb;
+      --success: #22c55e;
+      --secondary: #6366f1;
+    }
+
+    body.dark-mode {
+      --bg-color: #111827;
+      --text-color: #f3f4f6;
+      --container-bg: #1f2937;
+      --border-color: #374151;
+    }
+
+    .container {
+      background-color: var(--container-bg);
+      padding: 30px;
+      width: 100%;
+      max-width: 750px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      animation: fadeIn 1s ease-in-out both;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 20px;
+    }
+
+    input[type="file"],
+    textarea,
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      margin-top: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      background: transparent;
+      color: inherit;
+    }
+
+    input[type="submit"] {
+      background-color: var(--primary);
+      color: white;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1e40af;
+    }
+
+    .button-secondary {
+      background-color: var(--secondary);
+    }
+
+    .button-secondary:hover {
+      background-color: #4338ca;
+    }
+
+    .output-box {
+      margin-top: 30px;
+      background-color: var(--bg-color);
+      border-left: 4px solid var(--success);
+      padding: 20px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      width: 0;
+      background-color: var(--primary);
+      z-index: 9999;
+      transition: width 0.4s ease;
+    }
+
+    .toggle-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+
+    .toggle-btn {
+      background-color: var(--container-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: var(--border-color);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <div class="container">
+    <!-- Toggle -->
+    <div class="toggle-wrapper">
+      <button id="modeToggle" class="toggle-btn">
+        🌙 Dark Mode
+      </button>
+    </div>
+
+    <h1><i class="fas fa-search"></i> Resume Skill Analyzer</h1>
+
+    <!-- Upload PDF Form -->
+    <form method="POST" enctype="multipart/form-data">
+      <label>📄 Step 1: Upload Resume (PDF)</label>
+      <input type="file" name="pdf_file" accept=".pdf" required />
+      <input type="submit" value="Analyze Resume" />
+    </form>
+
+    {% if skills %}
+    <!-- Extracted Skills -->
+    <div class="output-box fade-in" style="border-left-color: var(--success);">
+      <h3 style="margin-top: 0; color: var(--success);">
+        <i class="fas fa-lightbulb"></i> Extracted Skills
+      </h3>
+      {{ skills }}
+    </div>
+
+    <!-- Job Description Form -->
+    <form method="POST">
+      <label>📝 Step 2: Paste Job Description</label>
+      <textarea name="job_description" rows="6" placeholder="Paste the job description here..." required></textarea>
+      <input type="submit" value="Compare & Suggest Projects" />
+    </form>
+
+    <!-- Cover Letter Form -->
+    <form method="POST">
+      <input type="hidden" name="generate_cover_letter" value="true" />
+      <input type="submit" value="✉️ Generate Cover Letter" class="button-secondary" />
+    </form>
+    {% endif %}
+
+    {% if response %}
+    <div class="output-box fade-in" style="border-left-color: var(--secondary);">
+      <h3 style="margin-top: 0; color: var(--secondary);">
+        {% if response_type == "cover_letter" %}
+        ✉️ Tailored Cover Letter:
+        {% else %}
+        💡 Skill Gap & Project Suggestions:
+        {% endif %}
+      </h3>
+      {{ response }}
+    </div>
+    {% endif %}
+  </div>
+
+  <script>
+    // Animate top progress bar
+    document.querySelectorAll("form").forEach((form) => {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.getElementById("progress-bar").style.width = "100%";
+        setTimeout(() => form.submit(), 400);
+      });
+    });
+
+    // Toggle dark/light mode
+    const toggleBtn = document.getElementById("modeToggle");
+    const body = document.body;
+
+    // Load saved mode
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark-mode");
+      toggleBtn.textContent = "☀️ Light Mode";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      const isDark = body.classList.contains("dark-mode");
+      toggleBtn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+  </script>
+</body>
+</html>
