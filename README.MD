@@ -13,9 +13,6 @@
     <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI/blob/main/LICENSE">
         <img src="https://img.shields.io/github/license/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="License"/>
     </a>
-    <a href="https://hub.docker.com/r/gp1410/autoportfolio_ai">
-        <img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker&style=for-the-badge" alt="Docker"/>
-    </a>
 </div>
 
 <div align="center">
@@ -26,6 +23,7 @@
     <br>
     <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
     <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Docker-Container-blue?logo=docker&style=for-the-badge"/>
     <img src="https://img.shields.io/badge/LLM-LLaMA--3-blueviolet"/>
     <img src="https://img.shields.io/badge/OpenRouter-API-green"/>
 </div>
