@@ -31,15 +31,14 @@
 
 ## 🗂️ Table of Contents
 
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Tech Stack](#tech-stack)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [Features](#features-)
+- [Getting Started](#getting-started-)
+- [Usage](#usage-)
+- [Tech Stack](#tech-stack-)
+- [Roadmap](#roadmap-)
+- [Contributing](#contributing-)
+- [License](#license-)
+- [Acknowledgements](#acknowledgements-)
 
 ---
 
