@@ -50,7 +50,7 @@
 - **Project Suggestions:** Receive project ideas to bridge your skill gaps.
 - **Smooth Multi-Step Forms** and session handling.
 
-## Getting Started 🙌
+## Tech Stack 🧰
 
 ```bash
 git clone https://github.com/gaurav-1410/Auto-Portfolio-AI.git
