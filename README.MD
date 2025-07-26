@@ -65,7 +65,7 @@ python app.py
 
 ---
 
-## Docker 🐳
+## Docker 👨‍💻
 
 You can also run AutoPortfolio-AI using Docker:
 
