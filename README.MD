@@ -1,21 +1,6 @@
 <h1 align="center">AutoPortfolio-AI 🚀</h1>
 
 <div align="center">
-    <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI">
-        <img src="https://img.shields.io/github/stars/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="Stars"/>
-    </a>
-    <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI/network/members">
-        <img src="https://img.shields.io/github/forks/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="Forks"/>
-    </a>
-    <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI/issues">
-        <img src="https://img.shields.io/github/issues/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="Issues"/>
-    </a>
-    <a href="https://github.com/gaurav-1410/Auto-Portfolio-AI/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/gaurav-1410/Auto-Portfolio-AI?style=for-the-badge" alt="License"/>
-    </a>
-</div>
-
-<div align="center">
     <i>
         A Flask web app to parse PDF resumes, match skills to job descriptions, analyze skill gaps, and generate LLM-powered AI cover letters with project suggestions.
     </i>
